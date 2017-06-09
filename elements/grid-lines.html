@@ -7,16 +7,12 @@
 <dom-module id="grid-lines">
     <template>
       <style>
-        :host {
-
-        }
-
         #grid_target {
           display: flex;
+          height: 100%;
         }
         .grid {
           display: block;
-          float: left;
           position: relative;
           box-sizing: border-box;
           position: relative;
@@ -25,7 +21,7 @@
           border-left: 0;
           width: var(--grid-lines-width, 10%);
           min-width: var(--grid-lines-width, 10%);
-          height: 600px;
+          height: 100%;
           transition: all .3s;
         }
         .grid:first-child {
@@ -50,7 +46,7 @@
         .grid .sub {
           float: left;
           position: relative;
-          height: 600px;
+          height: 100%;
           box-sizing: border-box;
           width: 8.333%;
           border-right: 1px dashed black;
